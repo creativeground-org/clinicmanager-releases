@@ -1,0 +1,33 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'ClinicManager Setup *.exe'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Extract version
+        id: version
+        run: |
+          FILE_NAME=$(ls ClinicManager\ Setup\ *.exe)
+          VERSION=$(echo "$FILE_NAME" | grep -oP 'Setup \K(\d+\.\d+\.\d+)')
+          echo "Version: $VERSION"
+          echo "::set-output name=version::$VERSION"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: Release ${{ steps.version.outputs.version }}
+          files: |
+            ClinicManager Setup ${{ steps.version.outputs.version }}.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
