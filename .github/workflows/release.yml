@@ -28,6 +28,6 @@ jobs:
           tag_name: ${{ steps.version.outputs.version }}
           name: Release ${{ steps.version.outputs.version }}
           files: |
-            ClinicManager Setup ${{ steps.version.outputs.version }}.exe
+            'ClinicManager Setup ${{ steps.version.outputs.version }}.exe'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
