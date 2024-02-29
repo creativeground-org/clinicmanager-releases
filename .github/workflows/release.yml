@@ -20,6 +20,7 @@ jobs:
         with:
           repository: ${{ github.repository }}
           excludes: prerelease, draft
+          myToken: ${{ github.token }}
 
       - name: Set the version
         id: version
