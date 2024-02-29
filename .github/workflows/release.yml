@@ -20,9 +20,8 @@ jobs:
         id: latest_release
         uses: InsonusK/get-latest-release@v1.0.1
         with:
-          repository: ${{ github.repository }}
-          excludes: prerelease, draft
-          token: ${{ github.token }}
+          exclude_types: prerelease, draft
+          myToken: ${{ github.token }}
 
       - name: Set the version
         id: version
