@@ -17,7 +17,7 @@ jobs:
       - name: Extract version
         id: version
         run: |
-          FILE_NAME=$(ls ClinicManager\ Setup\ *.exe)
+          FILE_NAME=$(ls ClinicManager-*-setup.exe)
           VERSION=$(echo "$FILE_NAME" | grep -oP 'Setup \K(\d+\.\d+\.\d+)')
           echo "Version: $VERSION"
           echo "::set-output name=version::$VERSION"
