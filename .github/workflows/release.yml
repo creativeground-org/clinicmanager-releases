@@ -28,5 +28,6 @@ jobs:
           name: Release ${{ steps.version.outputs.version }}
           files: |
             ClinicManager Setup ${{ steps.version.outputs.version }}.exe
+            latest.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
