@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'ClinicManager Setup *.exe'
+      - 'ClinicManager-*-setup.exe'
 
 jobs:
   release:
