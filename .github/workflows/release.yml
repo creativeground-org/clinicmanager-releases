@@ -27,8 +27,8 @@ jobs:
           tag_name: ${{ steps.version.outputs.version }}
           name: Release ${{ steps.version.outputs.version }}
           files: |
-            ClinicManager-Setup-${{ steps.version.outputs.version }}.exe
-            ClinicManager-Setup-${{ steps.version.outputs.version }}.exe.blockmap
+            ClinicManager-${{ steps.version.outputs.version }}-s.exe
+            ClinicManager-${{ steps.version.outputs.version }}-s.exe.blockmap
             latest.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
