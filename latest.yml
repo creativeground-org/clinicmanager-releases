@@ -1,8 +1,8 @@
-version: 1.0.28
+version: 1.0.29
 files:
-  - url: ClinicManager-1.0.28-setup.exe
-    sha512: mvBVMtm6cymIonYD5ReNk5CCEq2D8bWubcuMKgs+IL4rh0m1zYO+7DH3SIOoMz55IQEEJO7GcrPY2iDm1pWHtA==
-    size: 80926072
-path: ClinicManager-1.0.28-setup.exe
-sha512: mvBVMtm6cymIonYD5ReNk5CCEq2D8bWubcuMKgs+IL4rh0m1zYO+7DH3SIOoMz55IQEEJO7GcrPY2iDm1pWHtA==
-releaseDate: '2024-03-13T21:05:24.408Z'
+  - url: ClinicManager-1.0.29-setup.exe
+    sha512: quIbkALWnyrNca3QZ/ktm/w0uoREqsAM+8LVgc4cpjC8SXIpCKE88vJ7kEYOKLvmpizF2VR+Ed0rcK+ihVThFA==
+    size: 80927136
+path: ClinicManager-1.0.29-setup.exe
+sha512: quIbkALWnyrNca3QZ/ktm/w0uoREqsAM+8LVgc4cpjC8SXIpCKE88vJ7kEYOKLvmpizF2VR+Ed0rcK+ihVThFA==
+releaseDate: '2024-03-13T21:08:00.120Z'
